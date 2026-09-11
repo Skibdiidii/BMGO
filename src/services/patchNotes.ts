@@ -2,8 +2,43 @@ import { PatchNoteVersion } from '../types';
 
 export const PATCH_NOTES_HISTORY: PatchNoteVersion[] = [
   {
-    version: 'v1.9.0',
+    version: 'v1.9.1',
     releaseDate: 'September 2026 (Latest)',
+    title: 'Automated Tunnel Engine & Zero-Config Background Supervisor',
+    highlights: [
+      'Automated Background Runner: Zero-touch automatic startup on application boot with persistent supervisor loop',
+      'Instant Live Tunnel Forwarding: Automatically links local runtime port to public bore endpoint upon server launch',
+      'Realtime Health & Tunnel Diagnostics: Live endpoint status monitoring at /api/tunnel/status and /api/health',
+      'Auto-Recovery Pipeline: Automatic reconnection if network interruption or process termination occurs'
+    ],
+    changes: [
+      {
+        category: 'Features',
+        items: [
+          'Added automatic bore tunnel supervisor daemon running alongside Express server',
+          'Self-healing connection recovery with automatic retry interval',
+          'Public port auto-extraction with real-time console logging and status endpoint'
+        ]
+      },
+      {
+        category: 'UI/UX',
+        items: [
+          'Integrated automatic popup on launch with auto-scrolling historical version archive',
+          'Cleaned status indicators and streamlined mobile-first layout'
+        ]
+      },
+      {
+        category: 'Runtime',
+        items: [
+          'Direct fullstack Express and Vite middleware coordination',
+          'Zero-config local port forwarding without requiring manual execution commands'
+        ]
+      }
+    ]
+  },
+  {
+    version: 'v1.9.0',
+    releaseDate: 'September 2026',
     title: 'Engine Optimization, Streamlined Navigation & Zero-Lag Execution',
     highlights: [
       'Streamlined Core Navigation: Refined primary tabs focusing on high-performance in-game utilities',
