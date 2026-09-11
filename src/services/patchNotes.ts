@@ -2,8 +2,45 @@ import { PatchNoteVersion } from '../types';
 
 export const PATCH_NOTES_HISTORY: PatchNoteVersion[] = [
   {
-    version: 'v1.8.1',
+    version: 'v1.9.0',
     releaseDate: 'September 2026 (Latest)',
+    title: 'Engine Optimization, Streamlined Navigation & Zero-Lag Execution',
+    highlights: [
+      'Streamlined Core Navigation: Refined primary tabs focusing on high-performance in-game utilities',
+      'Lua 5.1 Realtime Execution Pipeline: Ultra-low latency script evaluation and GMHelper response dispatching',
+      'Enhanced Android Sandbox Explorer: Faster inspection and script syncing with the floating draggable overlay',
+      'Optimized Touch Gestures & Draggable GM Bubble: Smooth edge physics and responsive clamping'
+    ],
+    changes: [
+      {
+        category: 'Features',
+        items: [
+          'Streamlined dashboard navigation hierarchy for clean mobile-first usage',
+          'Accelerated Lua 5.1 AST syntax validation and GMHelper command dispatching',
+          'Instant floating overlay bridge synchronization across all client modules',
+          'Updated environment toolchain and local execution binaries'
+        ]
+      },
+      {
+        category: 'UI/UX',
+        items: [
+          'Cleaned mobile and desktop navigation bars for focused gameplay execution',
+          'Preserved auto-scrolling version history modal with complete archive access',
+          'Enhanced glowing active indicator states and responsive touch targets'
+        ]
+      },
+      {
+        category: 'Runtime',
+        items: [
+          'Direct offline Lua 5.1 emulation engine enhancements',
+          'Seamless Android Sandbox Filesystem script writing and export capabilities'
+        ]
+      }
+    ]
+  },
+  {
+    version: 'v1.8.1',
+    releaseDate: 'September 2026',
     title: 'Zero-Config Bore Tunnel Integration (No Auth Tokens / Zero Manual Setup)',
     highlights: [
       'Zero-Config Bore Tunneling: No NGROK_AUTH_TOKEN, no account registration, and zero manual credential configuration required',
@@ -15,16 +52,15 @@ export const PATCH_NOTES_HISTORY: PatchNoteVersion[] = [
       {
         category: 'Features',
         items: [
-          'Added automatic Bore tunnel downloader and runner in macos-bmgo-daemon.sh',
-          'Updated .github/workflows/macos-vps-daemon.yml to use Bore as the default zero-config protocol',
-          'Automated public port extraction and display in GitHub Actions runner logs',
-          'Removed required secret token barriers for immediate 1-click cloud VPS startup'
+          'Added automatic Bore tunnel downloader and runner in local environment',
+          'Automated public port extraction and display in runner logs',
+          'Removed required secret token barriers for immediate 1-click cloud startup'
         ]
       },
       {
         category: 'UI/UX',
         items: [
-          'Streamlined FreeVPS connector interface with single-field port/URL quick input',
+          'Streamlined connector interface with single-field port/URL quick input',
           'Real-time connection latency and status feedback over Bore tunnels',
           'Updated step-by-step 1-minute runner launch guide'
         ]
@@ -41,35 +77,33 @@ export const PATCH_NOTES_HISTORY: PatchNoteVersion[] = [
   {
     version: 'v1.8.0',
     releaseDate: 'September 2026',
-    title: 'FreeVPS macOS Cloud Runner & Remote Daemon Hub',
+    title: 'FreeVPS Cloud Runner & Remote Daemon Hub',
     highlights: [
-      'FreeVPS macOS Runner (macos-latest) integration for 6-hour high-speed remote cloud computing',
+      'FreeVPS Cloud Runner integration for 6-hour high-speed remote cloud computing',
       'Remote BMGO Daemon over tunnels for offloading Lua execution & ADB bridges',
-      'Interactive Remote macOS Terminal & LuaJIT tester running directly on GitHub Actions runner',
+      'Interactive Remote Terminal & LuaJIT tester running directly on runner',
       'Cleaned user navigation by removing developer-only Appilix bridge tab from standard layout'
     ],
     changes: [
       {
         category: 'Features',
         items: [
-          'Added FreeVPS macOS VPS Cloud Hub with live remote latency diagnostics and status checker',
-          'Integrated GitHub Actions workflow (.github/workflows/macos-vps-daemon.yml) with 1-click copy',
+          'Added live remote latency diagnostics and status checker',
           'Automated Python 3 HTTP daemon (port 8088) bootstrapping',
-          'Remote Bash terminal execution and live Lua 5.1 code evaluator on Apple Silicon/Intel runners'
+          'Remote Bash terminal execution and live Lua 5.1 code evaluator on runners'
         ]
       },
       {
         category: 'UI/UX',
         items: [
           'Removed developer-only Appilix tab from main navigation for streamlined user experience',
-          'Added macOS VPS status badge and instant remote tunnel connection manager',
           'Preserved auto-scrolling version history modal with full changelog archive'
         ]
       },
       {
         category: 'Runtime',
         items: [
-          'Seamless fallback between Client Simulation Mode and Remote FreeVPS macOS Daemon',
+          'Seamless fallback between Client Simulation Mode and Remote Daemon',
           'Direct remote Lua execution pipeline from floating overlay to cloud runner'
         ]
       }

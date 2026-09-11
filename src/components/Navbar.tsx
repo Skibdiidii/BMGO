@@ -9,8 +9,7 @@ import {
   Settings,
   Bell,
   Terminal,
-  FolderTree,
-  Server
+  FolderTree
 } from 'lucide-react';
 import { LATEST_VERSION } from '../services/patchNotes';
 
@@ -34,7 +33,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   const navItems = [
     { id: 'home', label: 'Home', icon: Home },
     { id: 'executor', label: 'Executor', icon: Terminal },
-    { id: 'freevps', label: 'macOS VPS', icon: Server, badge: 'Cloud' },
     { id: 'sandbox', label: 'Android FS', icon: FolderTree },
     { id: 'scripts', label: 'Scripts', icon: Code2 },
     { id: 'configs', label: 'Configs', icon: Sliders },

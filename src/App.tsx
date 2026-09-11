@@ -8,7 +8,6 @@ import { DashboardHarumi } from './components/DashboardHarumi';
 import { DashboardCommunity } from './components/DashboardCommunity';
 import { DashboardSettings } from './components/DashboardSettings';
 import { AndroidPathExplorer } from './components/AndroidPathExplorer';
-import { DashboardFreeVPS } from './components/DashboardFreeVPS';
 import { ExecutorOverlay } from './components/ExecutorOverlay';
 import { ToastContainer } from './components/ToastContainer';
 import { WhatsNewModal } from './components/WhatsNewModal';
@@ -73,12 +72,6 @@ export default function App() {
           <DashboardExecutor
             onOpenOverlay={handleOpenOverlay}
             onLoadScriptToOverlay={handleLoadScriptToExecutor}
-          />
-        )}
-        {activeTab === 'freevps' && (
-          <DashboardFreeVPS
-            onLoadScriptToOverlay={handleLoadScriptToExecutor}
-            onOpenOverlay={handleOpenOverlay}
           />
         )}
         {activeTab === 'scripts' && (
